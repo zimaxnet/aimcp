@@ -25,6 +25,10 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: Debug file existence
+        run: |
+          ls -l frontend-vite
+          cat frontend-vite/package-lock.json
       - name: Setup Node.js 20.x
         uses: actions/setup-node@v3
         with:
