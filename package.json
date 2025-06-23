@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/zimaxnet/ai-mcp-system.git"
   },
-  "workspaces": ["frontend", "backend"],
+  "workspaces": ["frontend-vite", "backend"],
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && npm run dev",
