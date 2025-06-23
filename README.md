@@ -9,7 +9,7 @@ A comprehensive AI system featuring React frontend, Azure B2C authentication, Co
 
 ## Features
 
-- 🔐 **Microsoft Entra External ID (CIAM) OAuth 2.0 Authentication** - Secure user management (standard flow)
+- 🔐 **Microsoft Entra External ID (CIAM) OAuth 2.0 Authentication** - Modern, secure, and enterprise-ready user management
 - 🧠 **Multi-LLM Orchestration** - Sequential thinking with OpenAI + Anthropic
 - 💾 **Persistent Memory** - CosmosDB-backed conversation history
 - 🛠 **100+ MCP Servers** - Extensive tool ecosystem integration
@@ -134,3 +134,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For questions or support, please open an issue or contact the maintainers at [your-email@example.com].
+
+---
+
+## Authentication Overview
+
+This system uses Microsoft Entra External ID (CIAM) with OAuth 2.0 for authentication:
+
+- **Frontend:** Users sign in via Microsoft Entra CIAM, using a secure OAuth 2.0 flow. The React app uses MSAL.js to handle login, token acquisition, and session management.
+- **Backend:** Azure Functions validate the JWT access tokens issued by Entra CIAM, ensuring only authenticated users can access protected APIs.
+
+This approach provides robust security, seamless SSO, and is ready for enterprise-scale deployments.
